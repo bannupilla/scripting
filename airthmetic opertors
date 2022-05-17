@@ -1,0 +1,30 @@
+//usaully supports 6 operators
++ --> Addition
+- --> Subtraction
+* --> multiplication
+/ --> division
+** --> power(exponentation)
+% --> modulo//
+
+eg1
+
+#!/bin/bash
+echo "Select which operation you want to chose "
+echo "1=Addition"
+echo "2=subtraction"
+read type
+if [ $type == '1' ]
+then
+echo "enter the values of a:  "
+read a
+echo "enter the values of b:  "
+read b
+echo "The additon of $a and $b is $((a+b))"
+elif [ $type == '2' ]
+then
+    echo "enter the values of a: "
+read a
+echo "enter the values of b:  "
+read b
+echo "The subtraction of $a and $b is $((a-b))"
+fi
