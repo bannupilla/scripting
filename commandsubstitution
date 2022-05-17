@@ -1,0 +1,5 @@
+//This is about command subsitution//
+Ba="pretty" //type enter after declaring//
+echo "Hi am $ba! My hometown is much @ba"
+//op: Hi am pretty! My hometown is much pretty //
+// In place of ba everywhere pretty will be replaced//
