@@ -1,0 +1,35 @@
+#!/bin/bash
+echo "Hi! What's your "name" ?"
+read name
+echo "Hey $name!! Welcome to search team"
+echo " Are you male or female ?"
+read type
+if [ $type == 'male' ]
+then
+echo "$name , I have a secret for you! Do you want to know??"
+echo "yes or no"
+read type
+if [ $type == 'yes' ]
+then
+        echo "$name.. you are so handsome"
+elif [ $type == 'no' ]
+then
+echo "$name ..I'm mad at you"
+else
+echo "I asked you to chose yes or no"
+fi
+else
+if [ $type == 'female' ]
+then
+echo "$name , I have a secret for you! Do you want to know??"
+echo "yes or no"
+read type
+if [ $type == 'yes' ]
+then
+        echo "$name.. you are so Beautiful :)"
+elif [ $type == 'no' ]
+then
+echo "$name ..I'm mad at you"
+fi
+fi
+fi
