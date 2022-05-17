@@ -3,3 +3,25 @@ Ba="pretty" //type enter after declaring//
 echo "Hi am $ba! My hometown is much @ba"
 //op: Hi am pretty! My hometown is much pretty //
 // In place of ba everywhere pretty will be replaced//
+
+
+
+
+//example 2" -  ways of echo command usage//
+
+echo "The hostname is $(hostname -f)"
+//o/p: The hostname is demo-gcp-7.pp-devcos-searchserv.us-central1.gcp.dev.paypalinc.com// 
+//It takes o/p of hostname -f and gives as input to our echo command and prints the line//
+
+secho The hostname is $(hostname -f)
+The hostname is demo-gcp-7.pp-devcos-searchserv.us-central1.gcp.dev.paypalinc.com //op//
+
+echo The (hostname) is $(hostname -f)
+-bash: syntax error near unexpected token `(' //error--> without "" if we give brackets we get error//
+
+ echo "The (hostname) is $(hostname -f)"
+The (hostname) is demo-gcp-7.pp-devcos-searchserv.us-central1.gcp.dev.paypalinc.com //op//
+
+ echo The \(hostname\) is $(hostname -f)
+The (hostname) is demo-gcp-7.pp-devcos-searchserv.us-central1.gcp.dev.paypalinc.com //op//
+
