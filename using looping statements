@@ -1,0 +1,17 @@
+#!/bin/baah
+echo "testing while loop"
+
+declare -i n=0
+while (( n<7 ))
+do
+echo "n value is $n"
+       (( n++ ))
+done
+echo "testing until loop"
+declare -i m=0
+until (( m==4))
+do
+echo " m value is $m"
+      (( m++ ))
+sleep 5   // out
+done
