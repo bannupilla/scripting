@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Type an animal name"
+read animal
+case $animal in
+              cat) echo "feline";;
+             dog|puppy) echo "canine";;
+              *) echo -e "\033[3;31;40mNO MATCH in DB!!\033[o"
+esac
