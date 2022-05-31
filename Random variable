@@ -1,0 +1,24 @@
+#!/bin/bash
+#Making a random display script
+
+echo "here's an example for random value display"
+
+randomnumber=$((0+ $RANDOM %3 ))
+randomefun=$((0+ $RANDOM %2 ))
+
+declare -a fruit=("i like banana"
+                  " I like apple"
+                 " I like potato"
+"i like cheese"
+"i like pinappple"
+"i like me")
+
+case $randomnumber in
+       0) echo "i like banana" ; sleep 2 ;;
+       1) echo  " I like potato" ; sleep 2 ;;
+       2) echo "i like pinappple"; sleep 2 ;;
+esac
+
+echo
+echo ${fruit[randomfun]} // array calling
+echo
