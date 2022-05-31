@@ -1,0 +1,54 @@
+#!/bin/bash
+
+greet()
+{
+echo " welcome!! $1 "
+}
+echo "testing greet function"
+greet bhavana
+
+
+// op: testing greet function
+ welcome!! bhavana
+//
+
+
+
+#!/bin/bash
+
+greet()
+{
+echo " welcome!! $1 "
+}
+echo "testing greet function"
+greet bhavana
+
+
+numberfun()
+{
+declare -i i=1
+for f in $@
+do
+echo "$i: $f"
+ (( i+=1 ))  //incrementing spaces are not mandate
+done
+echo "$FUNCNAME"
+}
+
+numberfun $(ls )
+echo
+numberfun bhavana arun dhilip  //we are using the func /.
+
+op: testing greet function
+ welcome!! bhavana
+1: 29917_3:55.jstack.txt
+2: all_templat.json
+3: casescript.sh
+
+numberfun
+
+1: bhavana
+2: arun
+3: dhilip
+numberfun
+
