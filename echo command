@@ -25,7 +25,7 @@ searchserv@demo-gcp-7:~$ myvar=bhavna
 searchserv@demo-gcp-7:~$ echo "The value of myvar is $myvar"
 The value of myvar is bhavna
 
-
+helooooooooooooooooooooo change 1
 
 ===========================
 
@@ -45,7 +45,8 @@ energetic
 searchserv@demo-gcp-7:~$ declare -A Search
 searchserv@demo-gcp-7:~$ Search[l1]="Bhavana"
 searchserv@demo-gcp-7:~$ Search[l2]="Sumit"
+searchserv@demo-gcp-7:~$ Search[l3]="chaitu"
 searchserv@demo-gcp-7:~$ echo ${Search[@]}
-Bhavana Sumit
+Bhavana Sumit chaitu
 searchserv@demo-gcp-7:~$ echo "The l1 associate is ${Search[l1]} and The L2 associate is ${Search[l2]}"
 The l1 associate is Bhavana and The L2 associate is Sumit
